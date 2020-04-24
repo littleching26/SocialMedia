@@ -7,9 +7,14 @@ import { HomeRoutingModule } from './home/home-routing.module'
 import { ButtonModule } from "primeng/button"; 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeModule } from './home/home.module'
+import { LoginRoutingModule } from './login/login-routing.module'
+import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, } from '@angular/forms';
+import { LoginModule } from './login/login.module'
+
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     ButtonModule,
@@ -17,7 +22,8 @@ import { HomeModule } from './home/home.module'
     AppRoutingModule,
     HomeRoutingModule,
     BrowserAnimationsModule,
-    HomeModule
+    HomeModule,
+    LoginRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
